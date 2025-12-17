@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<!-- Simple Navigation -->
+<div id="navbar">
+    <h2>
+        <a href="#home" id="home_text">Home</a> |
+        
+        <a href="/LabHTML/Marigosio_lab1 v1.html" id="LAB2">Lab2(HTML)</a> |
+        <a href="/LabHTMLCSS/Marigosio_lab2.html" id="LAB3">Lab3(HTML&CSS)</a> |
+        <a href="/Marigosio_lab3.html" id="LAB4">Lab4(HTML&CSS&JS)</a>
+    </h2>
+    <button id="theme_btn">Toggle Dark Mode</button>
+    <p id="greeting"></p>
+</div>
+ 
+<hr>
+ 
+<!-- 2-Column Layout -->
+<div id="content">
+    <div class="left-column">
+ 
+        <div id="home">
+            <img src="pfp.jpg" alt="Profile Image" height="160px" id="profile">
+           
+            <br><br>
+            <h2>Ryle Aaron D. Marigosio</h2>
+            <span class="job-title">Web Developer / Programmer</span>
+            <button id="editJobBtn">Edit Job Title</button>
+        </div>
+ 
+        <hr>
+ 
+        <div id="Contact_box">
+            <h3>Contact</h3>
+            <p>Email: ryleaaron@gmail.com</p>
+        </div>
+ 
+        <hr>
+
+        <button id="toggleSkillsBtn">Hide Skills</button>
+        <div id="Skills_box">
+            <h3>Skills</h3>
+            <dl>
+                <dt>Frontend</dt>
+                <dd>HTML</dd>
+                <dd>CSS</dd>
+                <dd>JavaScript</dd>
+                <dt>Programming Language</dt>
+                <dd>Python</dd>
+                <dd>Java</dd>
+                <dt>Others</dt>
+                <dd>PhotoShop</dd>
+                <dd>Video Editing</dd>
+            </dl>
+        </div>
+ 
+    </div>
+ 
+    <!-- RIGHT COLUMN -->
+    <div class="right-column">
+ 
+        <div id="about">
+            <h2>About Me</h2>
+            <ul>
+                <li>19 years old</li>
+                <li>BSIT-MI Student at NU-Fairview</li>
+                <li>Favorite Food: Fench Fries</li>
+            </ul>
+           
+        </div>
+ 
+        <hr>
+ 
+        <div id="Message_box">
+            <h2>Message Me</h2>
+            <form action="" method="post" onsubmit="return validateForm()">
+                <p>
+                    Name:<br><input type="text" name="name">
+                </p>
+                <p>
+                    Email:<br><input type="email" name="email">
+                </p>
+
+                <textarea id="msgBox" name="message" maxlength="200"></textarea>
+
+                <p>Characters left: <span id="counter">200</span></p>
+                <p>
+                    <input type="submit" value="Send" >
+                </p>
+            </form>
+        </div>
+ 
+    </div>
+</div>
+ 
+<hr>
+ 
+<!-- FOOTER -->
+<div id="footer">
+    <p id="footer_text"><strong>WebProg - Web Programming 2025</strong></p>
+    <p>Todays Date: <span id="dateDisplay"></span></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+ 
